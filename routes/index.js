@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/horrors', function(req, res, next) 
 {
-    res.render('index', 
+    res.render('film', 
       {
       title: "Прочь",
       picture: "images/away.jpg",
@@ -18,7 +18,7 @@ router.get('/horrors', function(req, res, next)
     
 router.get('/comedy', function(req, res, next) 
 {
-    res.render('index', 
+    res.render('film', 
       {
       title: "Все или ничего",
       picture: "images/all.jpeg",
@@ -28,7 +28,7 @@ router.get('/comedy', function(req, res, next)
     
 router.get('/drama', function(req, res, next) 
 {
-    res.render('index', 
+    res.render('film', 
       {
       title: "Во все тяжкое",
       picture: "images/Professor.jpg",
