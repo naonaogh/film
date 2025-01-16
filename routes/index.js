@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/horrors', function(req, res, next) 
+router.get('/Get Out', function(req, res, next) 
 {
     res.render('film', 
       {
@@ -16,7 +16,7 @@ router.get('/horrors', function(req, res, next)
       });
 });
     
-router.get('/comedy', function(req, res, next) 
+router.get('/The Longest Yard', function(req, res, next) 
 {
     res.render('film', 
       {
@@ -26,7 +26,7 @@ router.get('/comedy', function(req, res, next)
       });
 });
     
-router.get('/drama', function(req, res, next) 
+router.get('/The Professor', function(req, res, next) 
 {
     res.render('film', 
       {
