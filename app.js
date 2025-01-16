@@ -5,7 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/films')
+
 var session = require("express-session")
+var MongoStore = require('connect-mongo');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -29,8 +31,10 @@ app.use(session({
   cookie:{maxAge:60*1000},
   proxy: true,
   resave: true,
-  saveUninitialized: true
-  }))
+  saveUninitialized: true,
+  store: MongoStore.create({mongoUrl:
+  'mongodb://localhost/films'})
+  }))  
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
