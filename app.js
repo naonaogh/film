@@ -40,7 +40,9 @@ app.use(function(req,res,next){
   req.session.counter = req.session.counter + 1 || 1
   next()
   })
-    
+
+app.use(require("./middlewares/createMenu.js"))
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/films', films);
