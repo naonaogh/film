@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var Film = require('../models/film').film; // Убедитесь, что экспорт модели правильный
+var Film = require('../models/film').film; 
+var checkAuth = require('../middlewares/checkAuth.js');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -8,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* Страница фильма */
-router.get('/:nick', async function(req, res, next) {
+router.get('/:nick', checkAuth, async function(req, res, next) {
   try {
     // Поиск фильма по уникальному полю `nick`
     const films = await Film.find({ nick: req.params.nick });
