@@ -1,5 +1,11 @@
 <% layout('./layout/page.ejs') %>
 
-<h1><%= title %></h1>
-<img src="<%= picture %>" alt=""/>
-<h4><%=desc%></h4>
+<div class="film-card">
+    <img src="<%= picture %>" alt=""  class="film-poster"/>
+    <div class="film-content">
+        <h2><%= title %></h2>
+        <p class="film-desc"><%=desc%></p>
+    </div>
+ 
+</div>
+

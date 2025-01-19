@@ -6,3 +6,162 @@ body {
 a {
   color: #00B7FF;
 }
+
+.film-card {
+  display: flex;
+  align-items: flex-start;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.film-card h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.film-content {
+  padding: 15px;
+  flex: 1; 
+} 
+
+.film-poster {
+  width: 250px; 
+  height: auto;
+  flex-shrink: 0;
+}
+
+.film-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #52515a;
+  text-align: justify;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: center;
+} 
+  
+form {
+margin-top: 30px;
+} 
+
+.form-group {
+margin-bottom: 20px;
+} 
+
+label {
+font-size: 16px;
+font-weight: 500;
+color: #333;
+} 
+
+.input-group input {
+padding: 12px;
+font-size: 16px;
+border: 1px solid #ddd;
+border-radius: 6px;
+width: 100%;
+transition: border-color 0.3s ease;
+} 
+
+.input-group input:focus {
+border-color: #010053;
+outline: none;
+} 
+
+.btn {
+background-color: #202020;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 6px;
+font-size: 16px;
+transition: background-color 0.3s ease;
+} 
+
+.btn:hover {
+background-color: #22208e;
+} 
+
+.form-group .col-sm-5 {
+padding-left: 0;
+padding-right: 0;
+} 
+
+.form-group .col-sm-offset-1 {
+padding-left: 0;
+} 
+
+input[type="submit"] {
+width: 100%;
+padding: 14px;
+font-size: 18px;
+font-weight: bold;
+background-color: #010053;
+border: none;
+border-radius: 6px;
+transition: background-color 0.3s ease;
+} 
+
+input[type="submit"]:hover {
+background-color: #22208e;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #000000;
+  font-family: "Didot", "Bodoni MT", "Times New Roman", serif;
+  letter-spacing: 1px;
+
+}
+
+br {
+  margin-bottom: 20px;
+}
+
+.hi {
+  text-align: center;
+}
+
+.image-text-block {
+  display: flex; /* Используем flex для размещения элементов */
+  align-items: center; /* Выравнивание по вертикали по центру */
+  gap: 20px; /* Расстояние между изображениями и текстом */
+  width: 100%; /* Контейнер занимает всю ширину экрана */
+}
+
+.images {
+  display: flex; /* Используем flex для расположения изображений в строку */
+  flex-direction: column; /* Располагаем изображения вертикально */
+  align-items: center; /* Центрируем изображения по горизонтали */
+  gap: 10px; /* Расстояние между изображениями */
+}
+
+.images img {
+  width: 300px; /* Одинаковая ширина для всех изображений */
+  height: 400px; /* Одинаковая высота для всех изображений */
+  object-fit: cover; /* Сохранение пропорций изображения */
+  border-radius: 10px; /* Закруглённые углы */
+}
+
+.text {
+  flex: 1; /* Текст будет занимать оставшееся пространство */
+  padding: 20px; /* Отступы для текста */
+  box-sizing: border-box; /* Включает отступы в общую ширину */
+}
