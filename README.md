@@ -1,4 +1,4 @@
-<img src="images/Depp.jpg" height=150px width=100px/>
+<img src="https://pin.it/6EoqwqptQ" height=150px width=100px/>
 <h1 align="center">Hi there, this is a project about the filmography of Johnny Depp</h1>
 
 ## О проекте
