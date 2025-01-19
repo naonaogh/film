@@ -1,4 +1,4 @@
-<img src="https://github.com/naonaogh/film/master/public/images/Depp.jpg" height=150px width=100px/>
+<img src="https://github.com/naonaogh/film/raw/master/public/images/Depp.jpg" height=150px width=100px/>
 <h1 align="center">Hi there, this is a project about the filmography of Johnny Depp</h1>
 
 ## О проекте
